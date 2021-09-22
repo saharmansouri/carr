@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 50px;
 }
 .header{
     width: 60vw;
@@ -21,16 +22,16 @@ body{
 }
 #range{
     border-radius: 8px;
-    height: 4px;
+    height: 10px;
     outline: none;
     width: 100%;
-    /*-webkit-appearance: none;*/
+    -webkit-appearance: none;
 }
 input[type="range"]::-webkit-slider-thumb{
     width: 12px;
     -webkit-appearance: none;
     height: 12px;
-    background: seagreen;
+    background: black;
     border-radius: 100%;
 }
 .plans{
