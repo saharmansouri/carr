@@ -19,8 +19,19 @@ body{
 .buttons{
     align-self: center;
 }
-#range-bar{
-    width: 60vw;
+#range{
+    border-radius: 8px;
+    height: 4px;
+    outline: none;
+    width: 100%;
+    /*-webkit-appearance: none;*/
+}
+input[type="range"]::-webkit-slider-thumb{
+    width: 12px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: seagreen;
+    border-radius: 100%;
 }
 .plans{
     display: flex;
@@ -31,7 +42,7 @@ body{
     border: 2px solid #757575;
     border-radius: 10px;
     margin: 0 2rem;
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem;
     display: flex;
     flex-direction: column;
 
@@ -61,7 +72,6 @@ body{
     letter-spacing: 1px;
     position: relative;
     padding-right: 120px;
-    position: relative;
 }
 
 .switch-button:before {
@@ -117,4 +127,20 @@ body{
 .switch-button-label-span {
     position: relative;
 }
+/*responsive for mobile*/
 
+@media (max-width: 400px) {
+    .buttons {
+        margin-left: 89px;
+    }
+    h1 {
+        font-size: 3.6rem;
+    }
+    .plans {
+        display: grid;
+
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+}
